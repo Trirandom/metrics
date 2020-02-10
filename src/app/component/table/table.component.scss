@@ -1,0 +1,26 @@
+@import "../../../assets/style/variables";
+
+$elem-width: 40px;
+
+.mtr-table {
+
+  &__card__data {
+    margin: auto;
+    text-align: center;
+
+    &__header__btn--selected {
+      border: $color-selected 2px solid;
+    }
+
+    tr:nth-child(even) {
+      background-color: $light-grey;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: right;
+  }
+
+}

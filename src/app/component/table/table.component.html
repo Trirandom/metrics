@@ -1,0 +1,28 @@
+<section class="mtr-container mtr-table">
+  <div class="mtr-card mtr-table__card">
+    <table class="mtr-table__card__data" *ngIf="tableData && tableData[0]">
+      <tr class="mtr-table__card__data__header">
+        <th *ngFor="let data of tableData[0]; let i = index">
+          <button (click)="select(i)"
+                  class="mtr-btn"
+                  [class.mtr-table__card__data__header__btn--selected]="sortParams.selectedRow === i"
+          >
+            Metrics {{i + 1}}
+          </button>
+        </th>
+      </tr>
+      <tr *ngFor="let table of tableData"
+          class="mtr-table__card__data__elem">
+        <td *ngFor="let data of table">
+          {{data}}
+        </td>
+      </tr>
+    </table>
+    <div class="mtr-table__footer">
+      <button (click)="ngOnInit()"
+              class="mtr-btn">
+        change dataset
+      </button>
+    </div>
+  </div>
+</section>

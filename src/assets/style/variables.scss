@@ -1,0 +1,10 @@
+// variables
+$max-width: 800px;
+
+$white: #f7f7f7;
+$grey: #c0c0c0;
+$light-blue: #1c97fa;
+
+$light-grey: lighten($grey, 10);
+$dark-grey: darken($grey, 10);
+$color-selected: $light-blue

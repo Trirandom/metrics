@@ -1,0 +1,10 @@
+<header class="mtr-header">
+  <div class="mtr-container mtr-header__list">
+    <div *ngFor="let val of metricsService.headValues; let i = index" class="mtr-header__list__elem">
+      {{val}}
+      <div class="mtr-header__list__elem__label">
+        Metric{{i + 1}}
+      </div>
+    </div>
+  </div>
+</header>

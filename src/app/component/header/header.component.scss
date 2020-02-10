@@ -1,0 +1,28 @@
+@import "../../../assets/style/variables";
+
+.mtr-header {
+  height: 64px;
+  background-color: $white;
+  width: 100vw;
+  box-shadow: 1px 1px 1px 1px $dark-grey;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__elem {
+      margin: 5px;
+      padding-top: 4px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: solid $dark-grey 1px;
+      box-sizing: border-box;
+
+      &__label {
+        font-size: 12px;
+      }
+    }
+  }
+}
